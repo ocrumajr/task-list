@@ -13,7 +13,7 @@ document.querySelector("#push").onclick = function () {
 };
 //function to create task
 function createTask() {
-  if (taskInput.value == "") {
+  if (taskInput.value.length == 0) {
     alert("The task field is blank. Enter a task and try again");
   } else {
     //creates task by inserting an HTML <div> tag
